@@ -1,0 +1,495 @@
+
+
+/* General Style */
+
+body {
+    margin: 0;
+    padding: 100px 0 0 0;
+    background-color: #fffaf8;
+    color: #51464d;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #fffaf8;
+    padding: 20px 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 86%;
+    height: 45px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px #eee3e8;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    color: #806a78;
+    font-size: 30px;
+}
+
+header span {
+    color: #d6a7ba;
+}
+
+/* Navigation */
+
+nav {
+    float: right;
+    background-color: #f5e9ed;
+    padding: 14px;
+    border-radius: 30px;
+}
+
+nav a {
+    color: #51464d;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b887a3;
+}
+
+/* Home Page */
+
+.welcome {
+    padding: 70px 7%;
+    overflow: hidden;
+}
+
+.welcome-text {
+    float: left;
+    width: 45%;
+    padding-top: 45px;
+}
+
+.small-title {
+    color: #a2b69c;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.welcome h2 {
+    font-size: 43px;
+    color: #806a78;
+}
+
+.welcome-text p {
+    line-height: 1.8;
+}
+
+.welcome-image {
+    float: right;
+    width: 48%;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 4px 5px 12px #e8dfe2;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #c9dcbf;
+    color: #51464d;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #e8d2df;
+}
+
+.change-button {
+    background-color: #e8d2df;
+    color: #51464d;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.change-button:hover {
+    background-color: #c9dcbf;
+}
+
+/* Workshops */
+
+#workshops {
+    background-color: #f7f0f3;
+    padding: 60px 7%;
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+
+.section-title {
+    color: #806a78;
+    font-size: 32px;
+}
+
+.section-description {
+    margin-bottom: 40px;
+}
+
+.workshop-card {
+    float: left;
+    width: 28%;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 2px 4px 10px #e6dce0;
+    text-align: left;
+}
+
+.workshop-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.workshop-card h3 {
+    color: #967d91;
+}
+
+.workshop-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.workshop-card .change-button {
+    margin-left: 0;
+    padding: 10px 18px;
+    font-size: 13px;
+}
+
+.workshop-details {
+    color: #806a78;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Login and Sign Up */
+
+.login-section,
+.signup-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 12px #e8dfe2;
+    text-align: center;
+}
+
+.login-section {
+    width: 380px;
+    margin: 70px auto;
+}
+
+.signup-section {
+    width: 400px;
+    margin: 60px auto;
+}
+
+.login-section h2,
+.signup-section h2 {
+    color: #967d91;
+    font-size: 30px;
+}
+
+.login-section p,
+.signup-section p {
+    color: #806a78;
+}
+
+.login-section form,
+.signup-section form {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.login-section form {
+    margin-top: 30px;
+}
+
+.login-section label,
+.signup-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.login-section input[type="email"],
+.login-section input[type="password"],
+.signup-section input[type="text"],
+.signup-section input[type="email"],
+.signup-section input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #e8d2df;
+    border-radius: 10px;
+    background-color: #fffaf8;
+}
+
+.login-section input[type="submit"],
+.signup-section input[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    background-color: #c9dcbf;
+    border: none;
+    border-radius: 20px;
+    color: #51464d;
+    font-size: 16px;
+}
+
+.login-section input[type="submit"]:hover,
+.signup-section input[type="submit"]:hover {
+    background-color: #e8d2df;
+}
+
+.login-section a,
+.signup-section a {
+    color: #b887a3;
+}
+
+.form-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 2px 3px 8px #e8dfe2;
+}
+
+/* About Us - Our Story */
+
+.about-section {
+    text-align: center;
+    padding: 30px 15%;
+    background-color: #fffaf8;
+}
+
+.about-section h2 {
+    color: #806a78;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+.about-image {
+    width: 50%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 4px 10px #e8dfe2;
+}
+
+/* What Makes Amour Special */
+
+.special-section {
+    background-color: #fffaf8;
+    padding: 30px 15%;
+    text-align: center;
+}
+
+.special-section h2 {
+    color: #806a78;
+    font-size: 28px;
+    margin: 0 0 15px 0;
+}
+
+.special-section ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 15px;
+    color: #51464d;
+    margin: 0;
+}
+
+/* Opening Hours */
+
+.hours-section {
+    background-color: #f7f0f3;
+    padding: 35px 15%;
+    text-align: center;
+}
+
+.hours-section h2 {
+    color: #806a78;
+    font-size: 28px;
+    margin: 0 0 12px 0;
+}
+
+.hours-section p {
+    color: #806a78;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.hours-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.hours-section th {
+    background-color: #e8dce5;
+    color: #51464d;
+    padding: 10px;
+    border: 1px solid #d6c7d0;
+}
+
+.hours-section td {
+    padding: 10px;
+    border: 1px solid #d6c7d0;
+}
+
+.hours-section tr:hover {
+    background-color: #fffaf8;
+}
+
+/* About Us - Contact */
+
+.about-contact {
+    text-align: center;
+    padding: 30px;
+    background-color: #fffaf8;
+}
+
+.about-contact h2 {
+    color: #967d91;
+}
+
+.about-contact a {
+    color: #8a9f84;
+}
+
+.about-contact a:hover {
+    color: #c995b2;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e8dce5;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+
+
+/* Responsive layout for tablets and phones */
+@media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+
+    header {
+        position: static;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 16px 4%;
+    }
+
+    header h1, nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .welcome {
+        padding: 30px 5%;
+    }
+
+    .welcome-text, .welcome-image {
+        float: none;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .welcome h2 {
+        font-size: 32px;
+    }
+
+    .welcome-image {
+        margin-top: 20px;
+    }
+
+    .welcome-image img {
+        height: auto;
+        max-height: 350px;
+    }
+
+    .workshop-card {
+        float: none;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 480px;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .login-section, .signup-section {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 35px auto;
+        padding: 25px 18px;
+    }
+
+    .login-section input[type="email"],
+    .login-section input[type="password"],
+    .signup-section input[type="text"],
+    .signup-section input[type="email"],
+    .signup-section input[type="password"] {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .about-section, .special-section, .hours-section {
+        padding: 25px 5%;
+    }
+
+    .about-image {
+        width: 90%;
+    }
+}

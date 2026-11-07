@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amour Workshops - Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #loginMessage {
+            color: #b887a3;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Amour <span>✿</span></h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#workshops">Workshops</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<section class="login-section">
+
+    <h2>Welcome Back ♡</h2>
+
+    <p>Login to your Amour account</p>
+
+    <img src="xx.jpg"
+         class="form-image"
+         alt="Amour Creative Studio"
+         usemap="#loginmap">
+
+    <map name="loginmap">
+        <area shape="default"
+              href="about.html"
+              alt="About Amour Workshops">
+    </map>
+
+    <form onsubmit="return validateLogin()" novalidate>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email"
+               placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password"
+               placeholder="Enter your password">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <p id="loginMessage" role="status" aria-live="polite"></p>
+
+    <p>
+        Don't have an account?
+        <a href="signup.html">Sign Up</a>
+    </p>
+
+</section>
+
+<footer>
+    <p>Amour Workshops © 2026</p>
+</footer>
+
+<script>
+function validateLogin() {
+    var email = document.getElementById("email").value.trim();
+    var password = document.getElementById("password").value;
+    var message = document.getElementById("loginMessage");
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "" || password === "") {
+        message.textContent = "Please fill in all fields.";
+    } else if (!emailPattern.test(email)) {
+        message.textContent = "Please enter a valid email address.";
+    } else if (password.length < 8) {
+        message.textContent = "Password must contain at least 8 characters.";
+    } else {
+        message.textContent = "Login form validated successfully (demo only).";
+    }
+    return false; // Static demo: no server or real account authentication
+}
+</script>
+
+</body>
+</html>

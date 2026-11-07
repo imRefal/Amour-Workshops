@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amour Workshops - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Amour <span>✿</span></h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#workshops">Workshops</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<section class="welcome">
+
+    <div class="welcome-text">
+
+        <p class="small-title">
+            CREATE • RELAX • ENJOY
+        </p>
+
+        <h2>
+            Welcome to <br>
+            Amour Workshops
+        </h2>
+
+        <p id="welcomeMessage">
+            A little space for creativity,
+            joy, and beautiful handmade memories.
+        </p>
+
+        <p id="welcomeExtra">
+            Discover our creative workshops
+            and find something you love!
+        </p>
+
+        <a class="button" href="#workshops">
+            Explore Workshops
+        </a>
+
+        <button class="change-button"
+                onclick="changeWelcomeText()">
+            Discover Amour ♡
+        </button>
+
+    </div>
+
+    <div class="welcome-image">
+
+        <img id="heroImage" src="xx.jpg"
+             alt="Amour Creative Studio"
+             usemap="#homemap">
+
+        <map name="homemap">
+            <area shape="default"
+                  href="about.html"
+                  alt="About Amour Workshops">
+        </map>
+
+    </div>
+
+</section>
+
+<section id="workshops">
+
+    <h2 class="section-title">
+        Our Workshops
+    </h2>
+
+    <p class="section-description">
+        Choose your favorite creative experience.
+    </p>
+
+    <div class="workshop-card">
+
+        <img src="1.jpg" alt="Pottery Workshop">
+
+        <h3>Pottery Workshop</h3>
+
+        <p>
+            Enjoy working with clay and
+            creating your own handmade pottery.
+        </p>
+
+        <button class="change-button"
+                onclick="showDetails('pottery')">
+            View Price ♡
+        </button>
+
+        <p id="pottery" class="workshop-details"></p>
+
+    </div>
+
+    <div class="workshop-card">
+
+        <img src="s.jpg" alt="Candle Making">
+
+        <h3>Candle Making</h3>
+
+        <p>
+            Create beautiful handmade candles
+            with your favorite scents and colors.
+        </p>
+
+        <button class="change-button"
+                onclick="showDetails('candle')">
+            View Price ♡
+        </button>
+
+        <p id="candle" class="workshop-details"></p>
+
+    </div>
+
+    <div class="workshop-card">
+
+        <img src="3.jpg" alt="Canvas Painting">
+
+        <h3>Canvas Painting</h3>
+
+        <p>
+            Express your creativity through
+            colors and beautiful canvas art.
+        </p>
+
+        <button class="change-button"
+                onclick="showDetails('painting')">
+            View Price ♡
+        </button>
+
+        <p id="painting" class="workshop-details"></p>
+
+    </div>
+
+    <div class="clear"></div>
+
+</section>
+
+<footer>
+    <p>Amour Workshops © 2026</p>
+</footer>
+
+</body>
+</html>

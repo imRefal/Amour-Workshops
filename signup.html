@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amour Workshops - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Amour <span>✿</span></h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#workshops">Workshops</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<section class="signup-section">
+
+    <h2>Join Amour ♡</h2>
+
+    <p style="color: #967d91;">
+        Create your account and explore creativity!
+    </p>
+
+    <img src="xx.jpg"
+         class="form-image"
+         alt="Amour Creative Studio"
+         usemap="#signupmap">
+
+    <map name="signupmap">
+        <area shape="default"
+              href="about.html"
+              alt="About Amour Workshops">
+    </map>
+
+    <form onsubmit="return validateSignup()" novalidate>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname"
+               placeholder="Enter your full name">
+
+        <label for="signupEmail">Email Address</label>
+        <input type="email" id="signupEmail"
+               placeholder="Enter your email">
+
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword"
+               placeholder="Create a password">
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword"
+               placeholder="Confirm your password">
+
+        <input type="submit" value="Sign Up">
+
+    </form>
+
+    <p id="signupMessage" role="status" aria-live="polite"></p>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</section>
+
+<footer>
+    <p>Amour Workshops © 2026</p>
+</footer>
+
+<script>
+function validateSignup() {
+    var name = document.getElementById("fullname").value.trim();
+    var email = document.getElementById("signupEmail").value.trim();
+    var password = document.getElementById("signupPassword").value;
+    var confirm = document.getElementById("confirmPassword").value;
+    var message = document.getElementById("signupMessage");
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name === "" || email === "" || password === "" || confirm === "") {
+        message.textContent = "Please fill in all fields.";
+    } else if (name.length < 2) {
+        message.textContent = "Please enter your full name.";
+    } else if (!emailPattern.test(email)) {
+        message.textContent = "Please enter a valid email address.";
+    } else if (password.length < 8) {
+        message.textContent = "Password must contain at least 8 characters.";
+    } else if (password !== confirm) {
+        message.textContent = "Passwords do not match.";
+    } else {
+        message.textContent = "Sign Up form validated successfully (demo only).";
+    }
+    return false; // Static demo: no server or account creation
+}
+</script>
+
+</body>
+</html>
